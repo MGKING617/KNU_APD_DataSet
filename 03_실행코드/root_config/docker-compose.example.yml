@@ -10,7 +10,7 @@ services:
       TZ: Asia/Seoul
     volumes:
       - db_data:/var/lib/mysql
-      - ./database/init:/docker-entrypoint-initdb.d:ro
+      - ../database/init:/docker-entrypoint-initdb.d:ro
     ports:
       - "3306:3306"
 
@@ -22,7 +22,7 @@ services:
 
   ml:
     build:
-      context: .
+      context: ..
       dockerfile: ml/Dockerfile
     restart: unless-stopped
     environment:
@@ -33,7 +33,7 @@ services:
 
   backend:
     build:
-      context: .
+      context: ..
       dockerfile: backend/Dockerfile
     restart: unless-stopped
     depends_on:
@@ -59,7 +59,7 @@ services:
 
   frontend:
     build:
-      context: .
+      context: ..
       dockerfile: frontend/Dockerfile
       args:
         VITE_API_BASE_URL: ${VITE_API_BASE_URL:-}

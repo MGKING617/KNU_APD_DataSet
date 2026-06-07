@@ -22,7 +22,7 @@
 
 ## Jupyter Notebook
 
-`02_ipynb/term_project_pandas_visualization.ipynb`에는 데이터 로드, 전처리 결과 확인, 변수별 Reference high 비율 분석, 모델 성능 비교, SHAP 변수 중요도 시각화 코드가 포함되어 있습니다.
+`02_ipynb/APD_주피터노트북_판다스시각화.ipynb`에는 데이터 로드, 전처리 결과 확인, 변수별 Reference high 비율 분석, 모델 성능 비교, SHAP 변수 중요도 시각화 코드와 결과해석 주석셀이 포함되어 있습니다.
 
 노트북 실행에 필요한 주요 파일은 같은 폴더에 포함되어 있습니다.
 
@@ -46,7 +46,7 @@
 ## 환경 변수
 
 실제 키와 운영 API 주소는 코드에 포함하지 않았습니다. 
-실행 전 `.env.example`을 참고하여 `.env`를 작성해서 API 키와 모델등을 입력해야 정상적으로 웹앱 기능이 실행됩니다.
+실행 전 `.env.example`을 참고하여 `.env`를 작성해서 API 키와 모델 등을 입력해야 정상적으로 웹앱 기능이 실행됩니다.
 
 주요 환경 변수는 다음과 같습니다.
 
@@ -58,7 +58,7 @@
 ## Docker 실행 예시
 
 ```bash
+cd 03_실행코드/root_config
 cp .env.example .env
 docker compose -f docker-compose.example.yml --env-file .env up -d --build
 ```
-

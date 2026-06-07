@@ -5,7 +5,9 @@
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+node_modules/
+dist/
+target/
 .env
 .env.*
 !.env.example
-

@@ -35,7 +35,7 @@ def json_bytes(payload: dict[str, Any], status: int = 200) -> tuple[int, bytes, 
 
 def openai_chat(messages: list[dict[str, str]], context: dict[str, Any] | None) -> dict[str, Any]:
     api_key = os.getenv("OPENAI_API_KEY")
-    model = os.getenv("OPENAI_MODEL", "gpt-5.4-mini")
+    model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
     if not api_key:
         last = messages[-1]["content"] if messages else ""
         return {

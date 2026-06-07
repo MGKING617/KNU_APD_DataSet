@@ -24,6 +24,8 @@
 
 ## 폴더 구조
 
+아래 구조는 `03_실행코드/` 폴더를 기준으로 합니다. Docker Compose 설정 파일은 `03_실행코드/root_config/`에 두고, 빌드 컨텍스트는 상위 `03_실행코드/`를 바라보도록 구성했습니다.
+
 ```text
 .
 ├── backend/                 # Spring Boot API 서버
@@ -32,9 +34,10 @@
 ├── ml_after_expert_consultation/ # 전문가 상담 반영 실험 폴더
 ├── database/init/           # MySQL 초기 스키마
 ├── scripts/                 # 운영/벤치마크 보조 스크립트
-├── data/                    # 원자료 및 전처리 데이터
-├── docker-compose.example.yml
-└── .env.example
+└── root_config/             # Docker Compose, Nginx, 환경 변수 예시
+    ├── docker-compose.example.yml
+    ├── nginx.conf
+    └── .env.example
 ```
 
 ## 환경 변수 설정
@@ -42,9 +45,8 @@
 민감한 키와 새 AWS 인스턴스 주소는 코드에 넣지 않고 `.env`로 관리합니다.
 
 ```bash
+cd root_config
 cp .env.example .env
-cp frontend/.env.example frontend/.env
-cp backend/.env.example backend/.env
 ```
 
 주요 설정 항목:
@@ -96,6 +98,7 @@ mvn clean package
 ## Docker Compose 배포 예시
 
 ```bash
+cd root_config
 cp .env.example .env
 # .env에서 DB_PASSWORD, MYSQL_ROOT_PASSWORD, CORS_ORIGIN, LLM_API_KEY 등을 실제 값으로 변경
 docker compose -f docker-compose.example.yml --env-file .env up -d --build
@@ -107,7 +110,7 @@ docker compose -f docker-compose.example.yml --env-file .env up -d --build
 
 1. EC2 인스턴스를 생성하고 보안 그룹에서 HTTP 80, 백엔드 확인용 8080, SSH 22를 필요한 범위로 허용합니다.
 2. Docker와 Docker Compose를 설치합니다.
-3. 저장소를 clone하고 `.env.example`을 `.env`로 복사합니다.
+3. 저장소를 clone한 뒤 `03_실행코드/root_config`로 이동하고 `.env.example`을 `.env`로 복사합니다.
 4. `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `CORS_ORIGIN`, `VITE_API_BASE_URL`, `ML_API_URL`, `LLM_API_KEY`를 새 인스턴스/도메인 기준으로 설정합니다.
 5. `docker compose -f docker-compose.example.yml --env-file .env up -d --build`로 실행합니다.
 6. 도메인을 연결하는 경우 Route 53 또는 사용 중인 DNS에서 EC2 퍼블릭 IP를 바라보게 하고, HTTPS가 필요하면 Nginx 앞단에 인증서를 적용합니다.
