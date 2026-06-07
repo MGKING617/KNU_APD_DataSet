@@ -1,0 +1,16 @@
+﻿feature,importance
+age,3157.0
+stress_level,1000.0
+sex,939.0
+region_group,926.0
+walking_days,918.0
+economic_activity,848.0
+alcohol_frequency,831.0
+smoking_status,819.0
+weight_control,764.0
+single_person_household,669.0
+marital_status,645.0
+accident_poisoning_experience,609.0
+hypertension_diagnosis,532.0
+basic_livelihood_recipient,521.0
+diabetes_diagnosis,322.0

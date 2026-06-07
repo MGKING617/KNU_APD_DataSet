@@ -1,0 +1,16 @@
+﻿feature,mean_abs_shap
+stress_level,1.0515611283828326
+sex,0.2745021486746595
+smoking_status,0.2290284034125375
+age,0.14997117213316855
+marital_status,0.1282949947874014
+region_group,0.11910372797051437
+walking_days,0.11040892419121148
+economic_activity,0.10389697194117639
+alcohol_frequency,0.09596343732193215
+single_person_household,0.042438027703608
+accident_poisoning_experience,0.041519459293439726
+weight_control,0.0387380919629576
+basic_livelihood_recipient,0.029009602007871494
+hypertension_diagnosis,0.014477686349034142
+diabetes_diagnosis,0.00537897479453788

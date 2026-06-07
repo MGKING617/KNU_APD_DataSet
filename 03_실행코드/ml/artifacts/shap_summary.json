@@ -1,0 +1,82 @@
+[
+  {
+    "feature": "num__stress_level",
+    "mean_abs_shap": 1.0499175005651107
+  },
+  {
+    "feature": "num__subjective_health",
+    "mean_abs_shap": 0.6501497641597266
+  },
+  {
+    "feature": "num__sex",
+    "mean_abs_shap": 0.23280668635618934
+  },
+  {
+    "feature": "num__body_self_overweight",
+    "mean_abs_shap": 0.19906105525295836
+  },
+  {
+    "feature": "num__smoking_status",
+    "mean_abs_shap": 0.1960415181986975
+  },
+  {
+    "feature": "num__household_size",
+    "mean_abs_shap": 0.18329642058270695
+  },
+  {
+    "feature": "num__education_level",
+    "mean_abs_shap": 0.17659063401868108
+  },
+  {
+    "feature": "num__marital_status",
+    "mean_abs_shap": 0.15643044130841788
+  },
+  {
+    "feature": "num__age",
+    "mean_abs_shap": 0.13654272549209434
+  },
+  {
+    "feature": "num__region_group",
+    "mean_abs_shap": 0.12944543869918096
+  },
+  {
+    "feature": "num__breakfast_frequency",
+    "mean_abs_shap": 0.09160145723922948
+  },
+  {
+    "feature": "num__economic_activity",
+    "mean_abs_shap": 0.08264831059457556
+  },
+  {
+    "feature": "num__alcohol_frequency",
+    "mean_abs_shap": 0.06858492717554569
+  },
+  {
+    "feature": "num__walking_days",
+    "mean_abs_shap": 0.05399805252607458
+  },
+  {
+    "feature": "num__body_self_thin",
+    "mean_abs_shap": 0.04248658577667841
+  },
+  {
+    "feature": "num__accident_poisoning_experience",
+    "mean_abs_shap": 0.0360191657329759
+  },
+  {
+    "feature": "num__weight_control",
+    "mean_abs_shap": 0.031339415132482895
+  },
+  {
+    "feature": "num__basic_livelihood_recipient",
+    "mean_abs_shap": 0.015112419570320808
+  },
+  {
+    "feature": "num__hypertension_diagnosis",
+    "mean_abs_shap": 0.005276068724660523
+  },
+  {
+    "feature": "num__diabetes_diagnosis",
+    "mean_abs_shap": 0.002469228432366639
+  }
+]

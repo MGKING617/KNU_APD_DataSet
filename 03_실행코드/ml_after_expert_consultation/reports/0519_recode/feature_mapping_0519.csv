@@ -1,0 +1,17 @@
+﻿source_column,processed_column,note
+age,age,Copied from the 0519 recoded workbook.
+흡연경험여부,smoking_status,Copied from the 0519 recoded workbook.
+연간음주빈도,alcohol_frequency,Copied from the 0519 recoded workbook.
+걷기실천일수,walking_days,Copied from the 0519 recoded workbook.
+체중조절경험여부,weight_control,Copied from the 0519 recoded workbook.
+고혈압진단여부,hypertension_diagnosis,Copied from the 0519 recoded workbook.
+당뇨병진단여부,diabetes_diagnosis,Copied from the 0519 recoded workbook.
+연간사고중독여부,accident_poisoning_experience,Copied from the 0519 recoded workbook.
+기초생활수급자여부,basic_livelihood_recipient,Copied from the 0519 recoded workbook.
+경제활동여부,economic_activity,Copied from the 0519 recoded workbook.
+성별,sex,Copied from the 0519 recoded workbook.
+거주지,region_group,Copied from the 0519 recoded workbook.
+혼인상태,marital_status,Copied from the 0519 recoded workbook.
+주관적스트레스,stress_level,Copied from the 0519 recoded workbook.
+mbhld_co,single_person_household,1 for one-person households; 0 for households with two or more people; missing stays missing.
+"mtb_07a1,mtb_07b1,mtb_07c1,mtb_07d1,mtb_07e1,mtb_07f1,mtb_07g1,mtb_07h1,mtb_07i1",mh_PHQ_S,PHQ-like score from source values 1..4 mapped to 0..3 and summed; excluded from features.

@@ -1,0 +1,5 @@
+﻿model,tn,fp,fn,tp,threshold
+Logistic Regression,19953,5888,226,868,0.59
+XGBoost,20087,5754,241,853,0.59
+LightGBM,20345,5496,276,818,0.59
+Random Forest,23274,2567,636,458,0.59

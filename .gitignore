@@ -1,0 +1,11 @@
+01_결과보고서/
+03_ipynb/
+*.docx
+*.pdf
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+

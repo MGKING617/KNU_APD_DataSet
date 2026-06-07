@@ -1,0 +1,45 @@
+{
+  "source_rows": 134672,
+  "training_rows": 134672,
+  "positive_rows": 5468,
+  "negative_rows": 129204,
+  "target_column": "mh_PHQ_S",
+  "threshold": 10.0,
+  "age_filter": [
+    19,
+    39
+  ],
+  "feature_columns": [
+    "age",
+    "household_size",
+    "subjective_health",
+    "smoking_status",
+    "alcohol_frequency",
+    "walking_days",
+    "body_self_thin",
+    "body_self_overweight",
+    "weight_control",
+    "hypertension_diagnosis",
+    "diabetes_diagnosis",
+    "accident_poisoning_experience",
+    "basic_livelihood_recipient",
+    "breakfast_frequency",
+    "economic_activity",
+    "sex",
+    "region_group",
+    "education_level",
+    "marital_status",
+    "stress_level"
+  ],
+  "excluded_columns": [
+    "mh_PHQ_S"
+  ],
+  "dropped_empty_feature_columns": [],
+  "screening_feature_policy": {
+    "kept_context_columns": [
+      "region_group"
+    ],
+    "excluded_to_reduce_leakage_or_dataset_artifacts": []
+  },
+  "note": "This model estimates a reference risk group for expert review support. It is not a medical diagnosis."
+}

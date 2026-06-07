@@ -1,0 +1,82 @@
+[
+  {
+    "feature": "num__age",
+    "importance": 2575.0
+  },
+  {
+    "feature": "num__household_size",
+    "importance": 1316.0
+  },
+  {
+    "feature": "num__stress_level",
+    "importance": 712.0
+  },
+  {
+    "feature": "num__smoking_status",
+    "importance": 637.0
+  },
+  {
+    "feature": "num__sex",
+    "importance": 624.0
+  },
+  {
+    "feature": "num__economic_activity",
+    "importance": 587.0
+  },
+  {
+    "feature": "num__education_level",
+    "importance": 560.0
+  },
+  {
+    "feature": "num__subjective_health",
+    "importance": 533.0
+  },
+  {
+    "feature": "num__walking_days",
+    "importance": 512.0
+  },
+  {
+    "feature": "num__body_self_overweight",
+    "importance": 506.0
+  },
+  {
+    "feature": "num__region_group",
+    "importance": 480.0
+  },
+  {
+    "feature": "num__breakfast_frequency",
+    "importance": 465.0
+  },
+  {
+    "feature": "num__alcohol_frequency",
+    "importance": 436.0
+  },
+  {
+    "feature": "num__marital_status",
+    "importance": 400.0
+  },
+  {
+    "feature": "num__weight_control",
+    "importance": 392.0
+  },
+  {
+    "feature": "num__accident_poisoning_experience",
+    "importance": 367.0
+  },
+  {
+    "feature": "num__body_self_thin",
+    "importance": 307.0
+  },
+  {
+    "feature": "num__basic_livelihood_recipient",
+    "importance": 299.0
+  },
+  {
+    "feature": "num__hypertension_diagnosis",
+    "importance": 192.0
+  },
+  {
+    "feature": "num__diabetes_diagnosis",
+    "importance": 100.0
+  }
+]

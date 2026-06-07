@@ -1,0 +1,454 @@
+{
+  "generated_at": "2026-05-23T06:10:15.639954+00:00",
+  "input_file": "data\\raw\\0519) 지역사회건강조사 재범주화_수정본.xlsx",
+  "data_sheet": "0519) 지역사회건강조사 재범주화",
+  "cutoff_sheet": "cut-off 기준",
+  "metadata": {
+    "source_rows": 134798,
+    "target_valid_rows": 134672,
+    "output_rows": 134672,
+    "dropped_rows": 126,
+    "dropped_rows_reason": {
+      "invalid_or_missing_phq_score": 126,
+      "outside_age_range_or_missing_age": 0
+    },
+    "age_filter": [
+      19,
+      39
+    ],
+    "target_column": "mh_PHQ_S",
+    "target_formula": "sum(mtb_07a1..mtb_07i1 - 1) when all nine source values are 1..4",
+    "feature_columns": [
+      "age",
+      "single_person_household",
+      "smoking_status",
+      "alcohol_frequency",
+      "walking_days",
+      "weight_control",
+      "hypertension_diagnosis",
+      "diabetes_diagnosis",
+      "accident_poisoning_experience",
+      "basic_livelihood_recipient",
+      "economic_activity",
+      "sex",
+      "region_group",
+      "marital_status",
+      "stress_level"
+    ],
+    "excluded_columns": [
+      "mtb_07a1",
+      "mtb_07b1",
+      "mtb_07c1",
+      "mtb_07d1",
+      "mtb_07e1",
+      "mtb_07f1",
+      "mtb_07g1",
+      "mtb_07h1",
+      "mtb_07i1",
+      "mbhld_co",
+      "주관적건강기준",
+      "본인인지체형",
+      "아침식사일수",
+      "교육수준"
+    ],
+    "exclusion_policy": {
+      "phq_items": "Target calculation only, not model features.",
+      "mbhld_co": "Recoded to single_person_household: 1 for one-person households, 0 for two or more people.",
+      "주관적건강기준": "Removed after expert consultation; judged less specific for youth depression.",
+      "본인인지체형": "Removed after expert consultation; both thin and overweight self-perception indicators were excluded.",
+      "아침식사일수": "Removed after expert consultation; breakfast itself was not considered a core depression indicator.",
+      "교육수준": "Removed after expert consultation; treated as contextual rather than a direct depression-related factor."
+    }
+  },
+  "target": {
+    "threshold": 10.0,
+    "positive_rows": 5468,
+    "negative_rows": 129204,
+    "positive_rate": 0.04060235238208388,
+    "score_min": 0.0,
+    "score_max": 27.0,
+    "score_mean": 2.363252940477605
+  },
+  "raw_columns": [
+    "age",
+    "mbhld_co",
+    "mtb_07a1",
+    "mtb_07b1",
+    "mtb_07c1",
+    "mtb_07d1",
+    "mtb_07e1",
+    "mtb_07f1",
+    "mtb_07g1",
+    "mtb_07h1",
+    "mtb_07i1",
+    "주관적건강기준",
+    "흡연경험여부",
+    "연간음주빈도",
+    "걷기실천일수",
+    "본인인지체형",
+    "체중조절경험여부",
+    "고혈압진단여부",
+    "당뇨병진단여부",
+    "연간사고중독여부",
+    "기초생활수급자여부",
+    "아침식사일수",
+    "경제활동여부",
+    "성별",
+    "거주지",
+    "교육수준",
+    "혼인상태",
+    "주관적스트레스"
+  ],
+  "feature_columns": [
+    "age",
+    "single_person_household",
+    "smoking_status",
+    "alcohol_frequency",
+    "walking_days",
+    "weight_control",
+    "hypertension_diagnosis",
+    "diabetes_diagnosis",
+    "accident_poisoning_experience",
+    "basic_livelihood_recipient",
+    "economic_activity",
+    "sex",
+    "region_group",
+    "marital_status",
+    "stress_level"
+  ],
+  "missing_rate_by_feature": {
+    "basic_livelihood_recipient": 7.425448497089225e-05,
+    "smoking_status": 6.682903647380302e-05,
+    "diabetes_diagnosis": 5.940358797671379e-05,
+    "alcohol_frequency": 4.4552690982535346e-05,
+    "stress_level": 3.712724248544612e-05,
+    "hypertension_diagnosis": 3.712724248544612e-05,
+    "walking_days": 2.2276345491267673e-05,
+    "economic_activity": 2.2276345491267673e-05,
+    "accident_poisoning_experience": 1.4850896994178448e-05,
+    "weight_control": 1.4850896994178448e-05,
+    "marital_status": 1.4850896994178448e-05,
+    "age": 0.0,
+    "single_person_household": 0.0,
+    "region_group": 0.0,
+    "sex": 0.0
+  },
+  "value_distribution_by_feature": {
+    "age": {
+      "19": 4408,
+      "20": 3652,
+      "21": 4358,
+      "22": 5092,
+      "23": 5586,
+      "24": 6018,
+      "25": 6145,
+      "26": 6323,
+      "27": 6443,
+      "28": 6774,
+      "29": 6986,
+      "30": 7198,
+      "31": 7212,
+      "32": 7284,
+      "33": 7180,
+      "34": 7048,
+      "35": 7024,
+      "36": 7091,
+      "37": 7443,
+      "38": 7520,
+      "39": 7887
+    },
+    "single_person_household": {
+      "0.0": 111770,
+      "1.0": 22902
+    },
+    "smoking_status": {
+      "0.0": 45769,
+      "1.0": 88894,
+      "nan": 9
+    },
+    "alcohol_frequency": {
+      "0.0": 62170,
+      "1.0": 72496,
+      "nan": 6
+    },
+    "walking_days": {
+      "0.0": 50248,
+      "1.0": 84421,
+      "nan": 3
+    },
+    "weight_control": {
+      "0.0": 105266,
+      "1.0": 29404,
+      "nan": 2
+    },
+    "hypertension_diagnosis": {
+      "0.0": 4398,
+      "1.0": 130269,
+      "nan": 5
+    },
+    "diabetes_diagnosis": {
+      "0.0": 1908,
+      "1.0": 132756,
+      "nan": 8
+    },
+    "accident_poisoning_experience": {
+      "0.0": 7921,
+      "1.0": 126749,
+      "nan": 2
+    },
+    "basic_livelihood_recipient": {
+      "0.0": 2975,
+      "1.0": 131687,
+      "nan": 10
+    },
+    "economic_activity": {
+      "0.0": 97243,
+      "1.0": 37426,
+      "nan": 3
+    },
+    "sex": {
+      "0": 66311,
+      "1": 68361
+    },
+    "region_group": {
+      "0": 59084,
+      "1": 75588
+    },
+    "marital_status": {
+      "0.0": 47343,
+      "1.0": 87327,
+      "nan": 2
+    },
+    "stress_level": {
+      "0.0": 36206,
+      "1.0": 98461,
+      "nan": 5
+    },
+    "mh_PHQ_S": {
+      "0.0": 49139,
+      "1.0": 22828,
+      "2.0": 18040,
+      "3.0": 12992,
+      "4.0": 8719,
+      "5.0": 6071,
+      "6.0": 4357,
+      "7.0": 3010,
+      "8.0": 2299,
+      "9.0": 1749,
+      "10.0": 1261,
+      "11.0": 858,
+      "12.0": 737,
+      "13.0": 564,
+      "14.0": 425,
+      "15.0": 342,
+      "16.0": 282,
+      "17.0": 229,
+      "18.0": 173,
+      "19.0": 148,
+      "20.0": 87,
+      "21.0": 100,
+      "22.0": 62,
+      "23.0": 50,
+      "24.0": 51,
+      "25.0": 31,
+      "26.0": 20,
+      "27.0": 48
+    }
+  },
+  "non_binary_features_except_continuous": [],
+  "single_value_feature_columns": [],
+  "raw_value_distribution": {
+    "age": {
+      "19": 4415,
+      "20": 3660,
+      "21": 4360,
+      "22": 5093,
+      "23": 5589,
+      "24": 6026,
+      "25": 6149,
+      "26": 6326,
+      "27": 6449,
+      "28": 6781,
+      "29": 6992,
+      "30": 7212,
+      "31": 7216,
+      "32": 7295,
+      "33": 7186,
+      "34": 7050,
+      "35": 7031,
+      "36": 7098,
+      "37": 7449,
+      "38": 7527,
+      "39": 7894
+    },
+    "mbhld_co": {
+      "1": 22925,
+      "2": 29157,
+      "3": 38689,
+      "4": 33305,
+      "5": 8244,
+      "6": 1861,
+      "7": 448,
+      "8": 113,
+      "9": 34,
+      "10": 12,
+      "11": 10
+    },
+    "mtb_07a1": {
+      "1": 92312,
+      "2": 32074,
+      "3": 4707,
+      "4": 5629,
+      "7": 8,
+      "9": 68
+    },
+    "mtb_07b1": {
+      "1": 111170,
+      "2": 19530,
+      "3": 2631,
+      "4": 1442,
+      "7": 5,
+      "9": 20
+    },
+    "mtb_07c1": {
+      "1": 95125,
+      "2": 27463,
+      "3": 6148,
+      "4": 6047,
+      "7": 6,
+      "9": 9
+    },
+    "mtb_07d1": {
+      "1": 66733,
+      "2": 50522,
+      "3": 9233,
+      "4": 8295,
+      "7": 9,
+      "9": 6
+    },
+    "mtb_07e1": {
+      "1": 104438,
+      "2": 23562,
+      "3": 4154,
+      "4": 2632,
+      "7": 5,
+      "9": 7
+    },
+    "mtb_07f1": {
+      "1": 124293,
+      "2": 7961,
+      "3": 1518,
+      "4": 1005,
+      "7": 7,
+      "9": 14
+    },
+    "mtb_07g1": {
+      "1": 124969,
+      "2": 7719,
+      "3": 1211,
+      "4": 870,
+      "7": 6,
+      "9": 23
+    },
+    "mtb_07h1": {
+      "1": 131094,
+      "2": 2818,
+      "3": 509,
+      "4": 358,
+      "7": 9,
+      "9": 10
+    },
+    "mtb_07i1": {
+      "1": 128645,
+      "2": 4774,
+      "3": 820,
+      "4": 535,
+      "7": 10,
+      "9": 14
+    },
+    "주관적건강기준": {
+      "0.0": 81796,
+      "1.0": 53000,
+      "nan": 2
+    },
+    "흡연경험여부": {
+      "0.0": 45815,
+      "1.0": 88974,
+      "nan": 9
+    },
+    "연간음주빈도": {
+      "0.0": 62233,
+      "1.0": 72559,
+      "nan": 6
+    },
+    "걷기실천일수": {
+      "0.0": 50320,
+      "1.0": 84475,
+      "nan": 3
+    },
+    "본인인지체형": {
+      "0.0": 19124,
+      "1.0": 55337,
+      "2.0": 60332,
+      "nan": 5
+    },
+    "체중조절경험여부": {
+      "0.0": 105353,
+      "1.0": 29442,
+      "nan": 3
+    },
+    "고혈압진단여부": {
+      "0.0": 4403,
+      "1.0": 130390,
+      "nan": 5
+    },
+    "당뇨병진단여부": {
+      "0.0": 1911,
+      "1.0": 132879,
+      "nan": 8
+    },
+    "연간사고중독여부": {
+      "0.0": 7932,
+      "1.0": 126864,
+      "nan": 2
+    },
+    "기초생활수급자여부": {
+      "0.0": 2982,
+      "1.0": 131806,
+      "nan": 10
+    },
+    "아침식사일수": {
+      "0.0": 56370,
+      "1.0": 78427,
+      "nan": 1
+    },
+    "경제활동여부": {
+      "0.0": 97307,
+      "1.0": 37487,
+      "nan": 4
+    },
+    "성별": {
+      "0": 66380,
+      "1": 68418
+    },
+    "거주지": {
+      "0": 59142,
+      "1": 75656
+    },
+    "교육수준": {
+      "0.0": 53357,
+      "1.0": 81435,
+      "nan": 6
+    },
+    "혼인상태": {
+      "0.0": 47378,
+      "1.0": 87417,
+      "nan": 3
+    },
+    "주관적스트레스": {
+      "0.0": 36246,
+      "1.0": 98545,
+      "nan": 7
+    }
+  }
+}

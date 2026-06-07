@@ -1,0 +1,16 @@
+﻿feature,importance
+stress_level,1.0686546184833703
+subjective_health,0.5729170113773002
+sex,0.31215174605217766
+smoking_status,0.2435502852812846
+body_self_overweight,0.20167973487632435
+marital_status,0.1760154048294822
+household_size,0.1595629288637491
+education_level,0.15878467059305706
+economic_activity,0.1493982973332047
+region_group,0.1252444128925369
+accident_poisoning_experience,0.12023379362344273
+body_self_thin,0.10275078546556764
+basic_livelihood_recipient,0.10127962052784309
+breakfast_frequency,0.07807433177253996
+walking_days,0.07562931370631763

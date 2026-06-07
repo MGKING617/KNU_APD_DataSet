@@ -1,0 +1,43 @@
+{
+  "rows": 134672,
+  "positive_rows": 5468,
+  "negative_rows": 129204,
+  "positive_rate": 0.04060235238208388,
+  "columns": [
+    "age",
+    "single_person_household",
+    "smoking_status",
+    "alcohol_frequency",
+    "walking_days",
+    "weight_control",
+    "hypertension_diagnosis",
+    "diabetes_diagnosis",
+    "accident_poisoning_experience",
+    "basic_livelihood_recipient",
+    "economic_activity",
+    "sex",
+    "region_group",
+    "marital_status",
+    "stress_level",
+    "mh_PHQ_S"
+  ],
+  "feature_columns": [
+    "age",
+    "single_person_household",
+    "smoking_status",
+    "alcohol_frequency",
+    "walking_days",
+    "weight_control",
+    "hypertension_diagnosis",
+    "diabetes_diagnosis",
+    "accident_poisoning_experience",
+    "basic_livelihood_recipient",
+    "economic_activity",
+    "sex",
+    "region_group",
+    "marital_status",
+    "stress_level"
+  ],
+  "source_file": "data\\raw\\0519) 지역사회건강조사 재범주화_수정본.xlsx",
+  "report_dir": "ml_after_expert_consultation\\reports\\0519_recode"
+}

@@ -1,0 +1,16 @@
+﻿feature,signed_coefficient,absolute_coefficient,direction
+stress_level,-1.147355514038088,1.147355514038088,lower_model_score
+sex,0.34632038447611563,0.34632038447611563,higher_model_score
+smoking_status,-0.3278354460537925,0.3278354460537925,lower_model_score
+marital_status,0.1551011136178146,0.1551011136178146,higher_model_score
+economic_activity,0.14987068118824318,0.14987068118824318,higher_model_score
+basic_livelihood_recipient,-0.1407828806798941,0.1407828806798941,lower_model_score
+accident_poisoning_experience,-0.13845768047983123,0.13845768047983123,lower_model_score
+region_group,-0.12541037792608548,0.12541037792608548,lower_model_score
+walking_days,-0.12395786077407885,0.12395786077407885,lower_model_score
+single_person_household,0.10610102118296712,0.10610102118296712,higher_model_score
+alcohol_frequency,-0.0929347877685447,0.0929347877685447,lower_model_score
+hypertension_diagnosis,-0.08502006955957347,0.08502006955957347,lower_model_score
+diabetes_diagnosis,-0.05851468058404186,0.05851468058404186,lower_model_score
+age,0.006647148338594276,0.006647148338594276,higher_model_score
+weight_control,-0.001921342546275777,0.001921342546275777,lower_model_score
